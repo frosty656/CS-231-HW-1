@@ -1,2 +1,3 @@
 # CS-231-HW-1
-Initial commit
+Run RunFirst first
+Then run the rest in any order
