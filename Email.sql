@@ -8,8 +8,7 @@ CREATE TABLE email(
 ) AS
     SELECT DISTINCT email
     FROM my_contacts
-    WHERE email is NOT NULL
-    ORDER BY email;
+    WHERE email is NOT NULL;
 
-#ALTER TABLE my_contacts
-#DROP COLUMN email
+ALTER TABLE my_contacts
+DROP COLUMN email
