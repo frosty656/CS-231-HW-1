@@ -12,7 +12,8 @@ CREATE TABLE profession(
     ORDER BY profession;
 
 alter table my_contacts
-    ADD COLUMN profession_ID INT(11);
+    ADD COLUMN profession_ID INT(11),
+    ADD FOREIGN KEY (profession_ID) REFERENCES profession(profession_ID);
 
 
 update my_contacts
