@@ -18,7 +18,8 @@ WHERE location is NOT NULL
 ORDER BY location;
 
 alter table my_contacts
-    ADD COLUMN location_ID INT(11);
+    ADD COLUMN location_ID INT(11),
+    ADD FOREIGN KEY (location_ID) REFERENCES location(location_ID);
 
 update my_contacts
     INNER JOIN location
