@@ -12,7 +12,8 @@ CREATE TABLE gender(
     ORDER BY gender;
 
 alter table my_contacts
-    ADD COLUMN gender_ID INT(11);
+    ADD COLUMN gender_ID INT(11),
+    ADD FOREIGN KEY (gender_ID) REFERENCES gender(gender_ID);
 
 
 update my_contacts
