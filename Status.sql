@@ -12,7 +12,8 @@ CREATE TABLE status(
     ORDER BY status;
 
 alter table my_contacts
-    ADD COLUMN status_ID INT(11);
+    ADD COLUMN status_ID INT(11)
+    ADD FOREIGN KEY (status_ID) REFERENCES status(status_ID);
 
 
 update my_contacts
